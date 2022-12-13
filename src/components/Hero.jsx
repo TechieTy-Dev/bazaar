@@ -1,0 +1,146 @@
+import React from 'react'
+import bull from '../assets/BullAssets.png'
+import triangle from '../assets/Triangle.png'
+import rectangle from '../assets/Rectangle.png'
+import pcircle from '../assets/Ellipse 4.png'
+import bcircle from '../assets/Ellipse 2.png'
+
+import Navbar from './Navbar'
+
+const Hero = () => {
+  return (
+    <section>
+          <Navbar />
+           {/* ABSOLUTE BACKGROUND EFFECTS */}
+          <div className='absolute left-[-30px] lg:top-0 md:left-[200px] lg:left-[400px]' ><img src={rectangle} alt="" /></div>
+      <div className='absolute top-72 left-[-40px] md:top-[90px] md:left-[-60px] lg:top-[175px] z-0'><img src={triangle} alt="" /></div>
+      <div className='absolute top-0 right-0'><img src={pcircle} alt="" /></div>
+      <div className='absolute top-0 right-[0px]'><img src={bcircle} alt="" /></div>
+    <div className='z-10 flex w-full'>
+
+      {/* CONTENT CONTAINER */}
+      <div className='flex justify-center items-center flex-col-reverse md:flex-row w-[100vw] z-10'>
+      <div className='w-[400px] md:w-[300px] lg:w-[820px] md:mt-24 lg:mt-44 text-left mt-8  lg:ml-16'>
+        <div className='w-[250px] '>
+        <h2 className=' text-xl lg:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#FF23A7] via-[#48EFE5] z-10 to-[#00A3FF] uppercase mt-8'>NFT Marketplace</h2>
+        </div>
+        <h1 className='text-4xl font-normal leading-tight tracking-widest text-white lg:text-7xl'>Discover & own rare collectibles</h1>
+        <p className='text-[#C2C2C2] font-light text-lg lg:mt-16'>A marketplace for creators to show off their collections of Non Fungible Tokens.</p>
+        <div className='flex mt-8 '>
+          <button className='inline-flex items-center justify-center w-40 h-12 text-center text-white rounded-full border-gradient hover:bg-white hover:drop-shadow-2xl'> 
+          <svg className='mr-4' width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.18627 17.166C7.10893 17.2788 6.98995 17.3563 6.85552 17.3813C6.72108 17.4064 6.5822 17.377 6.46941 17.2997L4.20146 15.7444C4.08868 15.667 4.01124 15.5481 3.98618 15.4136C3.96112 15.2792 3.99049 15.1403 4.06783 15.0275C4.14518 14.9147 4.26415 14.8373 4.39859 14.8123C4.53302 14.7872 4.67191 14.8166 4.78469 14.8939L7.05264 16.4492C7.16542 16.5265 7.24286 16.6455 7.26792 16.7799C7.29298 16.9144 7.26361 17.0533 7.18627 17.166ZM15.4698 15.8754L11.8838 19.2204C11.7358 19.3605 11.554 19.4598 11.3562 19.5086C11.1583 19.5574 10.9512 19.554 10.7551 19.4988C10.6213 19.4657 10.495 19.4074 10.3831 19.327C10.1595 19.1738 9.99372 18.9501 9.91228 18.6916L9.00983 15.7073L4.7716 12.8009L1.6626 13.0342C1.39211 13.0514 1.12367 12.9774 0.900194 12.824C0.784868 12.7486 0.685006 12.6518 0.605971 12.5389C0.483761 12.3758 0.40597 12.1838 0.380208 11.9817C0.354445 11.7795 0.381591 11.5742 0.458993 11.3856L2.28732 6.83532C2.35636 6.66497 2.46326 6.51257 2.59992 6.38964C2.73657 6.26671 2.8994 6.17648 3.07608 6.12578L6.95197 5.03241C7.6076 4.20345 8.38548 3.47902 9.25893 2.88396C11.5294 1.33571 13.9252 0.957117 15.1564 0.863603C15.4305 0.843588 15.7033 0.917352 15.93 1.07279C16.1566 1.22822 16.3237 1.4561 16.4038 1.71901C16.746 2.89149 17.237 5.26016 16.5966 7.92626C16.3629 8.93321 15.9781 9.89899 15.4554 10.7908L15.8475 14.8839C15.8639 15.067 15.8384 15.2514 15.7729 15.4232C15.7075 15.595 15.6038 15.7496 15.4698 15.8754ZM5.45405 12.0184L9.49384 14.7888C17.305 10.7983 16.0042 4.01879 15.4083 2.01584C15.3972 1.97875 15.3744 1.94623 15.3434 1.92308C15.3123 1.89992 15.2747 1.88736 15.236 1.88724C13.1338 2.05039 6.28419 3.24066 5.45405 12.0184ZM4.44156 11.793C4.65729 9.70058 5.196 7.88173 6.067 6.35329L3.35388 7.11865C3.32921 7.12655 3.30654 7.13966 3.28739 7.15709C3.26824 7.17453 3.25307 7.19588 3.2429 7.2197L1.41458 11.77C1.40295 11.7966 1.39904 11.826 1.4033 11.8547C1.40756 11.8834 1.41982 11.9103 1.43867 11.9324C1.45428 11.9572 1.47658 11.977 1.503 11.9896C1.52942 12.0022 1.55886 12.007 1.58791 12.0035L4.44156 11.793ZM14.8212 14.9825L14.5465 12.1161C13.4439 13.4961 11.9457 14.6779 10.0689 15.652L10.9007 18.3899C10.9079 18.4182 10.923 18.444 10.9443 18.4641C10.9655 18.4842 10.9921 18.4978 11.0208 18.5035C11.0482 18.5131 11.0777 18.5148 11.106 18.5085C11.1344 18.5021 11.1603 18.4879 11.181 18.4674L14.7669 15.1225C14.7855 15.1044 14.7999 15.0825 14.8093 15.0584C14.8187 15.0343 14.8227 15.0084 14.8212 14.9825ZM11.3621 7.73371C11.5023 7.82983 11.6678 7.88224 11.8378 7.88429C12.0078 7.88634 12.1745 7.83794 12.317 7.74522C12.4594 7.6525 12.5712 7.51962 12.6381 7.36339C12.705 7.20716 12.7241 7.03458 12.693 6.86749C12.6618 6.7004 12.5818 6.5463 12.4631 6.42467C12.3444 6.30305 12.1923 6.21936 12.026 6.18419C11.8597 6.14903 11.6867 6.16396 11.5289 6.22711C11.3711 6.29025 11.2356 6.39877 11.1394 6.53895C11.0105 6.72692 10.9616 6.95839 11.0033 7.18245C11.0451 7.40651 11.1742 7.60481 11.3621 7.73371Z" fill="white"/>
+</svg>
+
+Explore</button>
+          <button className='w-40 h-12 text-center justify-center inline-flex items-center rounded-full border bg-white border-2-gradient ml-7 text-[#2C00EE] hover:drop-shadow-2xl'><svg className='mr-4' width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.42773 6.53027C2.08398 6.18652 1.82259 5.79622 1.64355 5.35938C1.46452 4.92253 1.375 4.46419 1.375 3.98438C1.375 3.47591 1.4681 3.00684 1.6543 2.57715C1.84049 2.14746 2.09473 1.77148 2.41699 1.44922C2.73926 1.12695 3.1224 0.876302 3.56641 0.697266C4.01042 0.518229 4.47949 0.42513 4.97363 0.417969C5.44629 0.417969 5.90462 0.500326 6.34863 0.665039C6.79264 0.829753 7.18652 1.08398 7.53027 1.42773L11.3223 5.21973L10.3447 6.19727L8.25 4.10254L5.10254 7.25L7.19727 9.34473L6.21973 10.3223L2.42773 6.53027ZM4.98438 1.77148C4.67643 1.77148 4.38639 1.8252 4.11426 1.93262C3.84212 2.04004 3.60579 2.19759 3.40527 2.40527C3.20475 2.61296 3.0472 2.8457 2.93262 3.10352C2.81803 3.36133 2.75716 3.65495 2.75 3.98438C2.75 4.25651 2.78581 4.49284 2.85742 4.69336C2.92904 4.89388 3.03288 5.08366 3.16895 5.2627C3.30501 5.44173 3.45182 5.61003 3.60938 5.76758C3.76693 5.92513 3.9388 6.09342 4.125 6.27246L7.27246 3.125C7.08626 2.94596 6.91797 2.77409 6.76758 2.60938C6.61719 2.44466 6.45247 2.30143 6.27344 2.17969C6.0944 2.05794 5.9082 1.95768 5.71484 1.87891C5.52148 1.80013 5.27799 1.76432 4.98438 1.77148ZM22 21L15.2002 19.3027L12.0527 16.1553L13.0303 15.1777L15.3613 17.5195C15.4759 17.1471 15.6335 16.7962 15.834 16.4668C16.0345 16.1374 16.2744 15.833 16.5537 15.5537C16.833 15.2744 17.1338 15.0381 17.4561 14.8447C17.7783 14.6514 18.1328 14.4902 18.5195 14.3613L16.1777 12.0303L17.1553 11.0527L20.3027 14.2002L22 21ZM20.1094 19.1094L19.2285 15.5752C18.8919 15.6468 18.5804 15.7614 18.2939 15.9189C18.0075 16.0765 17.7461 16.2734 17.5098 16.5098C17.2734 16.7461 17.0765 17.0075 16.9189 17.2939C16.7614 17.5804 16.6468 17.8919 16.5752 18.2285L20.1094 19.1094ZM18.5625 1.0625C18.9421 1.0625 19.2965 1.13411 19.626 1.27734C19.9554 1.42057 20.249 1.61751 20.5068 1.86816C20.7646 2.11882 20.9616 2.40885 21.0977 2.73828C21.2337 3.06771 21.3053 3.42578 21.3125 3.8125C21.3125 4.17773 21.2445 4.52865 21.1084 4.86523C20.9723 5.20182 20.7718 5.49902 20.5068 5.75684L8.19629 18.0674C8.13184 18.4899 7.99935 18.8766 7.79883 19.2275C7.59831 19.5785 7.34766 19.89 7.04688 20.1621C6.74609 20.4342 6.40592 20.6383 6.02637 20.7744C5.64681 20.9105 5.24219 20.9857 4.8125 21H0V19.625C0.078776 19.625 0.161133 19.6143 0.24707 19.5928C0.333008 19.5713 0.411784 19.5391 0.483398 19.4961C0.662435 19.403 0.809245 19.2848 0.923828 19.1416C1.03841 18.9984 1.12793 18.8408 1.19238 18.6689C1.25684 18.4971 1.30339 18.318 1.33203 18.1318C1.36068 17.9456 1.375 17.7559 1.375 17.5625C1.375 17.14 1.44661 16.7389 1.58984 16.3594C1.73307 15.9798 1.94076 15.6361 2.21289 15.3281C2.48503 15.0202 2.79297 14.7695 3.13672 14.5762C3.48047 14.3828 3.87077 14.2503 4.30762 14.1787L16.6182 1.86816C16.876 1.61035 17.1732 1.41341 17.5098 1.27734C17.8464 1.14128 18.1973 1.06966 18.5625 1.0625ZM4.8125 19.625C5.09896 19.625 5.36751 19.5713 5.61816 19.4639C5.86881 19.3564 6.08724 19.2096 6.27344 19.0234C6.45964 18.8372 6.60645 18.6188 6.71387 18.3682C6.82129 18.1175 6.875 17.849 6.875 17.5625C6.875 17.276 6.82129 17.0075 6.71387 16.7568C6.60645 16.5062 6.45964 16.2878 6.27344 16.1016C6.08724 15.9154 5.86881 15.7686 5.61816 15.6611C5.36751 15.5537 5.09896 15.5 4.8125 15.5C4.52604 15.5 4.25749 15.5537 4.00684 15.6611C3.75618 15.7686 3.53776 15.9154 3.35156 16.1016C3.16536 16.2878 3.01855 16.5062 2.91113 16.7568C2.80371 17.0075 2.75 17.276 2.75 17.5625C2.75 18.3073 2.52083 18.9948 2.0625 19.625H4.8125ZM10.377 13.9424C10.1478 13.4912 9.87923 13.1117 9.57129 12.8037C9.26335 12.4958 8.88379 12.2272 8.43262 11.998L6.05859 14.3721C6.5026 14.5439 6.8929 14.7982 7.22949 15.1348C7.56608 15.4714 7.82389 15.8652 8.00293 16.3164L10.377 13.9424ZM19.5293 4.7793C19.7943 4.51432 19.9268 4.19206 19.9268 3.8125C19.9268 3.6263 19.891 3.45085 19.8193 3.28613C19.7477 3.12142 19.651 2.97819 19.5293 2.85645C19.4076 2.7347 19.2607 2.63444 19.0889 2.55566C18.917 2.47689 18.7415 2.44108 18.5625 2.44824C18.1829 2.44824 17.8607 2.58073 17.5957 2.8457L9.44238 10.9883C9.87923 11.2461 10.248 11.5254 10.5488 11.8262C10.8496 12.127 11.1289 12.4958 11.3867 12.9326L19.5293 4.7793Z" fill="#2C00EE"/>
+</svg>
+Create</button>
+        </div>
+      </div>
+      <div className=" w-[420px]  lg:w-[520px] z-10 mt-[100px] lg:mt-44 text-left">
+        <img src={bull} alt="Bull NFT" loading='lazy' />
+      </div>
+    </div>
+    </div>
+    <div className='relative z-10 grid items-center justify-center w-full grid-cols-1 mx-auto md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-x-4'>
+      <div className='flex-col mt-20 ml-16 text-white w-[300px]'>
+      <svg className='relative z-0' width="300" height="157" viewBox="0 0 303 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M301 2H2V155H253.16L301 101.548V2Z" stroke="url(#paint0_linear_104_1291)" stroke-width="3"/>
+<defs>
+<linearGradient id="paint0_linear_104_1291" x1="2" y1="70.1635" x2="301" y2="70.1635" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A3FF"/>
+<stop offset="0.00570809" stop-color="#00A3FF" stop-opacity="0"/>
+<stop offset="0.526471" stop-color="#00A3FF" stop-opacity="0.71"/>
+<stop offset="1" stop-color="#00A3FF"/>
+</linearGradient>
+</defs>
+</svg>
+
+        <div className='mt-[-9rem] flex gap-x-8'>
+          <div className="bg-[#00A3FF] rounded-lg justify-center items-center flex w-12 h-12  ml-4"><svg width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26 21C26.8667 21 27.5833 20.7167 28.15 20.15C28.7167 19.5833 29 18.8667 29 18C29 17.1333 28.7167 16.4167 28.15 15.85C27.5833 15.2833 26.8667 15 26 15C25.1333 15 24.4167 15.2833 23.85 15.85C23.2833 16.4167 23 17.1333 23 18C23 18.8667 23.2833 19.5833 23.85 20.15C24.4167 20.7167 25.1333 21 26 21ZM4 32V4V32ZM4 36C2.9 36 1.958 35.6087 1.174 34.826C0.391333 34.042 0 33.1 0 32V4C0 2.9 0.391333 1.958 1.174 1.174C1.958 0.391333 2.9 0 4 0H32C33.1 0 34.042 0.391333 34.826 1.174C35.6087 1.958 36 2.9 36 4V9H32V4H4V32H32V27H36V32C36 33.1 35.6087 34.042 34.826 34.826C34.042 35.6087 33.1 36 32 36H4ZM20 28C18.9 28 17.9587 27.6087 17.176 26.826C16.392 26.042 16 25.1 16 24V12C16 10.9 16.392 9.958 17.176 9.174C17.9587 8.39133 18.9 8 20 8H34C35.1 8 36.042 8.39133 36.826 9.174C37.6087 9.958 38 10.9 38 12V24C38 25.1 37.6087 26.042 36.826 26.826C36.042 27.6087 35.1 28 34 28H20Z" fill="white"/>
+</svg></div>
+          <h2 className='max-w-[150px] text-base font-normal tracking-wider leading-5 text-left'>Set Up Your Crypto Wallet</h2>
+        </div>
+        <p className="mt-2 ml-4 text-xs tracking-wider text-left w-60">Veritatis itaque nemo. Facilis est culpa totam labore placeat quis perferendis. Id numquam quo quibusdam officia. </p>
+      </div>
+      <div className='flex-col mt-20 ml-16 lg:ml-8 text-white w-[300px]'>
+      <svg width="303" height="157" viewBox="0 0 303 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M301 2H2V155H253.16L301 101.548V2Z" stroke="url(#paint0_linear_104_1292)" stroke-width="3"/>
+<defs>
+<linearGradient id="paint0_linear_104_1292" x1="2" y1="70.1635" x2="301" y2="70.1635" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FA29A9"/>
+<stop offset="0.00570809" stop-color="#FF23A7" stop-opacity="0"/>
+<stop offset="0.526471" stop-color="#FF23A7" stop-opacity="0.43"/>
+<stop offset="1" stop-color="#BC0F77"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+        <div className='mt-[-9rem] flex gap-x-8'>
+          <div className="bg-[#FA29A9] rounded-lg justify-center items-center flex w-12 h-12  ml-4">
+          <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="13" height="13" fill="white"/>
+<rect x="18" width="13" height="13" fill="white" fill-opacity="0.7"/>
+<rect y="18" width="13" height="13" fill="white"/>
+<rect x="18" y="18" width="13" height="13" fill="white"/>
+</svg>
+
+          </div>
+          <h2 className='max-w-[150px] text-left text-base font-normal tracking-wider leading-5'>Create Your Own Collection</h2>
+        </div>
+        <p className="mt-2 ml-4 text-xs tracking-wider text-left w-60">Veritatis itaque nemo. Facilis est culpa totam labore placeat quis perferendis. Id numquam quo quibusdam officia. </p>
+      </div>
+      <div className='flex-col mt-20 ml-16 lg:ml-8 text-white w-[300px]'>
+      <svg width="303" height="157" viewBox="0 0 303 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M301 2H2V155H253.16L301 101.548V2Z" stroke="url(#paint0_linear_104_1293)" stroke-width="3"/>
+<defs>
+<linearGradient id="paint0_linear_104_1293" x1="2" y1="70.1635" x2="301" y2="70.1635" gradientUnits="userSpaceOnUse">
+<stop stop-color="#876CFF"/>
+<stop offset="0.00570809" stop-color="#876CFF" stop-opacity="0"/>
+<stop offset="0.526471" stop-color="#876CFF" stop-opacity="0.56"/>
+<stop offset="1" stop-color="#6C4AFF"/>
+</linearGradient>
+</defs>
+</svg>
+
+        <div className='mt-[-9rem] flex gap-x-8'>
+          <div className="bg-[#876CFF] rounded-lg justify-center items-center flex w-12 h-12  ml-4"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.16663 0.5H30C31.4586 0.5 32.8576 1.07946 33.889 2.11091C34.9205 3.14236 35.5 4.54131 35.5 6V29.8333C35.5 31.292 34.9205 32.691 33.889 33.7224C32.8576 34.7539 31.4586 35.3333 30 35.3333H6.16663C4.70794 35.3333 3.30899 34.7539 2.27754 33.7224C1.24609 32.691 0.666626 31.292 0.666626 29.8333V6C0.666626 4.54131 1.24609 3.14236 2.27754 2.11091C3.30899 1.07946 4.70794 0.5 6.16663 0.5ZM6.16663 2.33333C5.19417 2.33333 4.26153 2.71964 3.5739 3.40727C2.88627 4.09491 2.49996 5.02754 2.49996 6V27.241L10.3705 19.3705L14.9538 23.9538L24.1205 14.7872L33.6666 24.3333V6C33.6666 5.02754 33.2803 4.09491 32.5927 3.40727C31.905 2.71964 30.9724 2.33333 30 2.33333H6.16663ZM14.9538 26.5462L10.3705 21.9628L2.49996 29.8333C2.49996 30.8058 2.88627 31.7384 3.5739 32.4261C4.26153 33.1137 5.19417 33.5 6.16663 33.5H30C30.9724 33.5 31.905 33.1137 32.5927 32.4261C33.2803 31.7384 33.6666 30.8058 33.6666 29.8333V26.9257L24.1205 17.3795L14.9538 26.5462ZM10.75 6C11.9655 6 13.1313 6.48289 13.9909 7.34243C14.8504 8.20197 15.3333 9.36776 15.3333 10.5833C15.3333 11.7989 14.8504 12.9647 13.9909 13.8242C13.1313 14.6838 11.9655 15.1667 10.75 15.1667C9.53438 15.1667 8.36859 14.6838 7.50905 13.8242C6.64951 12.9647 6.16663 11.7989 6.16663 10.5833C6.16663 9.36776 6.64951 8.20197 7.50905 7.34243C8.36859 6.48289 9.53438 6 10.75 6ZM10.75 7.83333C10.0206 7.83333 9.32114 8.12306 8.80542 8.63879C8.28969 9.15451 7.99996 9.85399 7.99996 10.5833C7.99996 11.3127 8.28969 12.0122 8.80542 12.5279C9.32114 13.0436 10.0206 13.3333 10.75 13.3333C11.4793 13.3333 12.1788 13.0436 12.6945 12.5279C13.2102 12.0122 13.5 11.3127 13.5 10.5833C13.5 9.85399 13.2102 9.15451 12.6945 8.63879C12.1788 8.12306 11.4793 7.83333 10.75 7.83333Z" fill="white"/>
+</svg>
+</div>
+          <h2 className='max-w-[150px] text-left text-base font-normal tracking-wider leading-5'>Add Your NFTs</h2>
+        </div>
+        <p className="mt-2 ml-4 text-xs tracking-wider text-left w-60">Veritatis itaque nemo. Facilis est culpa totam labore placeat quis perferendis. Id numquam quo quibusdam officia. </p>
+      </div>
+      <div className='flex-col mt-20 ml-16 lg:ml-8 text-white max-w-[300px]'>
+      <svg width="303" height="157" viewBox="0 0 303 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M301 2H2V155H253.16L301 101.548V2Z" stroke="url(#paint0_linear_104_1294)" stroke-width="3"/>
+<defs>
+<linearGradient id="paint0_linear_104_1294" x1="2" y1="70.1635" x2="301" y2="70.1635" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9901"/>
+<stop offset="0.00570809" stop-color="#FF9901" stop-opacity="0"/>
+<stop offset="0.526471" stop-color="#FF9901" stop-opacity="0.53"/>
+<stop offset="1" stop-color="#DA8303"/>
+</linearGradient>
+</defs>
+</svg>
+
+        <div className='mt-[-9rem] flex gap-x-8'>
+          <div className="bg-[#FF9900] rounded-lg justify-center items-center flex w-12 h-12  ml-4"><svg width="20" height="34" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.6333 14.9833C6.47167 13.9017 5.13334 12.7833 5.13334 11.0417C5.13334 9.04333 6.985 7.65 10.0833 7.65C13.3467 7.65 14.5567 9.20833 14.6667 11.5H18.7183C18.59 8.34667 16.665 5.45 12.8333 4.515V0.5H7.33334V4.46C3.77667 5.23 0.91667 7.54 0.91667 11.0783C0.91667 15.3133 4.41834 17.4217 9.53334 18.65C14.1167 19.75 15.0333 21.3633 15.0333 23.0683C15.0333 24.3333 14.135 26.35 10.0833 26.35C6.30667 26.35 4.82167 24.6633 4.62 22.5H0.58667C0.80667 26.515 3.81334 28.77 7.33334 29.5217V33.5H12.8333V29.5583C16.4083 28.88 19.25 26.8083 19.25 23.05C19.25 17.8433 14.795 16.065 10.6333 14.9833Z" fill="white"/>
+</svg>
+</div>
+          <h2 className='max-w-[150px] text-left text-base font-normal tracking-wider leading-5'>List Your NFT For Sale </h2>
+        </div>
+        <p className="mt-2 ml-4 text-xs tracking-wider text-left w-60">Veritatis itaque nemo. Facilis est culpa totam labore placeat quis perferendis. Id numquam quo quibusdam officia. </p>
+      </div>
+    </div>
+    </section>
+  )
+}
+
+export default Hero
