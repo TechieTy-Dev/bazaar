@@ -34,7 +34,7 @@ const CollectionCard = () => {
       <div className='mt-6 text-left text-white lg:ml-4'>
         <h2 className='text-3xl font-black tracking-wider uppercase'>fuzzy tails crib</h2>
         <h4 className='font-light leading-6 text-md '>2,349 AVAILABLE NFTS</h4>
-        <button className='bg-[#573BD9] text-center w-[300px] lg:w-[380px]  mt-20 lg:mt-8 h-[50px] rounded-md mb-4'>View Collection</button>
+        <button className='bg-[#573BD9] text-center w-[300px] lg:w-[380px]  mt-20 lg:mt-8 h-[50px] rounded-md mb-4 lg:hover:bg-[#3b2793]'>View Collection</button>
       </div>
       </div>
     </div>
@@ -51,13 +51,13 @@ const CollectionCard = () => {
       <div className='mt-6 ml-4 text-left text-white '>
         <h2 className='text-3xl font-black tracking-wider uppercase'>FURRY BEAR CLUB</h2>
         <h4 className='font-light leading-6 text-md '>2,870 AVAILABLE NFTS</h4>
-        <button className='bg-[#573BD9] text-center w-[300px] lg:w-[370px]  mt-20 lg:mt-8 h-[50px] rounded-md mb-4 '>View Collection</button>
+        <button className='bg-[#573BD9] text-center w-[300px] lg:w-[370px]  mt-20 lg:mt-8 h-[50px] rounded-md mb-4  lg:hover:bg-[#3b2793]'>View Collection</button>
       </div>
       </div>
     </div>
     <div className='bg-[#08012A] collection-gradient-border  z-10 rounded-lg p-4 w-[470px] ml-4 '>
       <div className='w-full'>
-      <div className='grid w-[100%]  grid-cols-3 gap-2 pt-4'>
+      <div className='grid w-[100%] justify-center items-center  pt-4 grid-cols-3 gap-2 mx-auto'>
         <img src={dino1} alt="NFT Product" loading='lazy' />
         <img src={dino2} alt="NFT Product" loading='lazy' />
         <img src={dino3} alt="NFT Product" loading='lazy' />
@@ -68,7 +68,7 @@ const CollectionCard = () => {
       <div className='mt-6 ml-4 text-left text-white'>
         <h2 className='text-3xl font-black tracking-wider uppercase'>DINO LAND</h2>
         <h4 className='font-light leading-6 text-md '>4,101 AVAILABLE NFTS</h4>
-        <button className='bg-[#573BD9] text-center w-[300px] lg:w-[370px]  mt-20 lg:mt-8 h-[50px] rounded-md mb-4'>View Collection</button>
+        <button className='bg-[#573BD9] text-center w-[300px] lg:w-[380px]  mt-20 lg:mt-8 h-[50px] rounded-md mb-4 lg:hover:bg-[#3b2793]'>View Collection</button>
       </div>
       </div>
     </div>

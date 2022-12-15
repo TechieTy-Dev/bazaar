@@ -15,7 +15,7 @@ const Creators = () => {
     <section className='w-full mt-48 overflow-x-hidden'>
       <div className=' w-[90%] flex ml-16'>
         <h1 className='text-2xl w-[200px] font-black tracking-wide text-white lg:text-4xl '>TRENDING CREATORS</h1>
-        <button className='uppercase w-[250px] h-[65px] bg-[#08012A] border border-white text-white ml-[660px]'> last 24 Hours</button>
+        <button className='uppercase w-[250px] h-[65px] hidden lg:block bg-[#08012A] border border-white text-white lg:ml-[60rem]'> last 24 Hours</button>
         
       </div>
       <div className='border border-white w-[80%] lg:w-[95%]  bg-[#08012A] mt-16 mx-auto grid lg:grid-cols-2 p-4 lg:grid-rows-5 '>
@@ -236,8 +236,8 @@ const Creators = () => {
               <span className='ml-2 text-white uppercase'>1.05 Eth</span>
             </div>
           </div>
-          <div className='flex-col hidden lg:flex'>
-            <h5 className="text-3xl leading-8 text-[#FF2E00]">-8.50%</h5>
+          <div className='flex-col hidden ml-24 lg:flex'>
+            <h5 className="text-3xl leading-8 text-[#FF2E00] ">-8.50%</h5>
             <div className='flex mt-4 text-white'>
               <p className='mr-2 uppercase'>Vol.</p>
               <img src={eth} loading='lazy' alt="eth price icon" />
