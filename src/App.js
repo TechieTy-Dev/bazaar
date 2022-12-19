@@ -1,22 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import {
-  Hero,
-  Auction,
-  Collections,
-  Creators,
-  Footer,
-  Resources,
-} from "./components";
+import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/ProductPage";
+
 function App() {
   return (
     <div className="App">
       <div className="bg-[#0C0043] w-full">
-        <Hero />
-        <Auction />
-        <Collections />
-        <Creators />
-        <Resources />
-        <Footer />
+        <Router>
+          <Routes>
+            <Route path={"/"} element={<HomePage />} />
+            <Route path={"/Product"} element={<ProductPage />} />
+          </Routes>
+        </Router>
       </div>
     </div>
   );

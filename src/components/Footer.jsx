@@ -6,7 +6,7 @@ import reddit from '../assets/Component 5.svg'
 
 const Footer = () => {
   return (
-    <section className='bg-[#08012A] w-full mt-40'>
+    <section className=' relative z-10 bg-[#08012A] w-full mt-40'>
       <div className='flex justify-between'>
         <div className='flex flex-col ml-16 text-left text-white'>
           <h1 className='text-4xl leading-relaxed tracking-wide mt-9'>Bazaar</h1>

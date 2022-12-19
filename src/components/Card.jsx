@@ -13,11 +13,11 @@ const Card = () => {
   return (
     <div className="flex w-full cards-container">
         <div className='absolute z-0 top-[500px] left-[200px]' ><img src={circle} alt="background highlight" /></div>
-      <div className="flex ml-6 lg:ml-16 flex-col text-white w-[300px]  mt-6 lg:mt-16 card">
+      <div className="flex ml-6 lg:ml-16 flex-col text-white w-[300px]  mt-6 lg:mt-16 card z-10 relative">
       <div className="max-w-[300px]">
-      <img src={bear} alt="bear" loading='lazy' />
+      <a href="/Product"><img src={bear} alt="bear" loading='lazy' /></a>
       </div>
-      <div className='flex flex-col mt-5 container-content'>
+      <div className='relative z-10 flex flex-col mt-5 container-content'>
         <div className='flex'>
           <div className='flex flex-col text-left'>
         <h3 className='text-2xl font-bold leading-8 tracking-wide'>Bear #513</h3>
